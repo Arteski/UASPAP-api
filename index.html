@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Branding Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Personal Branding Saya</h1>
+</header>
+
+<section>
+    <h2>Siapa Saya?</h2>
+    <p>Nama: [Nama Anda]</p>
+    <p>Profesi: [Profesi Anda]</p>
+    <p>Deskripsi: [Deskripsi singkat tentang diri Anda]</p>
+    <button onclick="toggleSkills()">Tampilkan Keterampilan</button>
+    <div id="skills" class="hidden">
+        <h3>Keterampilan Saya</h3>
+        <ul>
+            <li>Keterampilan 1</li>
+            <li>Keterampilan 2</li>
+            <li>Keterampilan 3</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Pengalaman Kerja</h2>
+    <p>[Deskripsi pengalaman kerja Anda]</p>
+</section>
+
+<section>
+    <h2>Kontak Saya</h2>
+    <p>Email: [Email Anda]</p>
+    <p>Telepon: [Nomor Telepon Anda]</p>
+</section>
+
+<script>
+    function toggleSkills() {
+        const skillsDiv = document.getElementById('skills');
+        if (skillsDiv.classList.contains('hidden')) {
+            skillsDiv.classList.remove('hidden');
+        } else {
+            skillsDiv.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>
